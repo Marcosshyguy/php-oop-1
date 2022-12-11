@@ -20,7 +20,10 @@ require __DIR__ . "./db.php";
 
             <h3><?php echo $movie->title ?></h3>
             <ul>
-                <li><?php echo 'Genre: ' . $movie->genres ?></li>
+                <li>Genre:<?php foreach ($movie->genres as $genre => $value) { ?>
+                    <?php echo $value; ?>
+                <?php  } ?>
+                </li>
                 <li><?php echo 'Director: ' . $movie->director_name ?></li>
                 <li><?php echo 'Realese date: ' . $movie->realese_date ?></li>
                 <?php if ($movie->plot) {

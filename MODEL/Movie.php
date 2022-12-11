@@ -11,7 +11,7 @@ class Movie
     public $main_actor_actress;
     private $box_office_gross = 0;
 
-    function __construct(string $title, string $genres, string $director_name, string $realese_date, string $plot = '')
+    function __construct(string $title, Genre $genres, string $director_name, string $realese_date, string $plot = '')
     {
         $this->title = $title;
         $this->genres = $genres;
