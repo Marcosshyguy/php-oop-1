@@ -1,12 +1,5 @@
 <?php
-require_once __DIR__  . "/MODEL/Movie.php";
-
-$movies = [
-
-    new Movie('Nightmare Before Christmas', 'fantasy horror', 'Tim Burton', 'October 13, 1993'),
-
-    new Movie("Weekend at Bernie's", 'comedy', 'Ted KotCheff', 'July 5, 1989', 'Movie with a dead man and two guys that pretend to make him look alive')
-];
+require __DIR__ . "./db.php";
 ?>
 
 <!DOCTYPE html>
